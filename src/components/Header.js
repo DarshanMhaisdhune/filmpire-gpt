@@ -48,9 +48,9 @@ const Header = () => {
         <img className='w-52' src={LOGO} alt="Logo" />
     
     {user && (
-    <div className='flex p-3'>
-        <img className='w-12 h-12 m-2' src={UserIcon} alt="UserIcon" />
-        <button className=' text-white bg-transparent m-2 p-1 w-11  text-base font-medium' onClick={handleSignOut}>Sign-Out</button>
+    <div className='flex p-2'>
+        <img className='w-10 h-10 m-2' src={UserIcon} alt="UserIcon" />
+        <button className=' text-white bg-transparent text-base font-medium -mt-4' onClick={handleSignOut}>Log-Out</button>
     </div>
     )}
     </div>

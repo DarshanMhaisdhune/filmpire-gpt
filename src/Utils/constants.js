@@ -6,3 +6,15 @@ export const UserIcon =
 
 export const SignBG =
         "https://assets.nflxext.com/ffe/siteui/vlv3/a09bb938-2d90-42ae-986e-5a3e4abf9e77/8eb1e781-3494-4aa4-9405-268ca6473e4c/IN-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg";
+
+
+export const API_OPTIONS = {
+            method: 'GET',
+            headers: {
+              accept: 'application/json',
+              Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYmYwZTcyZmZlNjY0YjdkMjQwOWZkNGUzMWVlNTBhOCIsInN1YiI6IjY1NjE3YzdiYjIzNGI5MDBlMmM2ZTE5OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gZIt3SB2NpokT5aqb33FH_RQ42zGxrUKbQdoYd8hP_I'
+            }
+          };
+
+
+ export const MoviePoster_CdnUrl ="https://image.tmdb.org/t/p/w500"
