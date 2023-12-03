@@ -7,14 +7,18 @@ export const UserIcon =
 export const SignBG =
         "https://assets.nflxext.com/ffe/siteui/vlv3/a09bb938-2d90-42ae-986e-5a3e4abf9e77/8eb1e781-3494-4aa4-9405-268ca6473e4c/IN-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
+export const GptBG =
+        "https://img.freepik.com/free-photo/assortment-cinema-elements-red-background-with-copy-space_23-2148457848.jpg?w=1060&t=st=1701424131~exp=1701424731~hmac=e44a0dbd9a0a6a963de3f1f83c4dae12a5376d9b34dcc129a1f3a9c61ea02da0"
 
 export const API_OPTIONS = {
             method: 'GET',
             headers: {
               accept: 'application/json',
-              Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYmYwZTcyZmZlNjY0YjdkMjQwOWZkNGUzMWVlNTBhOCIsInN1YiI6IjY1NjE3YzdiYjIzNGI5MDBlMmM2ZTE5OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gZIt3SB2NpokT5aqb33FH_RQ42zGxrUKbQdoYd8hP_I'
+              Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_KEY,
             }
           };
 
 
- export const MoviePoster_CdnUrl ="https://image.tmdb.org/t/p/w500"
+ export const MoviePoster_CdnUrl ="https://image.tmdb.org/t/p/w500" ;
+
+ 

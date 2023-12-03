@@ -5,12 +5,19 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../Utils/userSlice';
 import { LOGO, UserIcon } from '../Utils/constants';
+import { toggleGptSearch } from '../Utils/gptSlice';
+import { IoHome } from "react-icons/io5";
 
 const Header = () => {
-
+ 
+  const showGptSearch =  useSelector(store => store.gpt.showGptSearch);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector((store)=> store.user);
+  const handleGptSearchClick=()=>{
+      dispatch(toggleGptSearch());
+
+  }
   const handleSignOut=()=>{
     signOut(auth).then(() => {
       // Sign-out successful.
@@ -49,6 +56,7 @@ const Header = () => {
     
     {user && (
     <div className='flex p-2'>
+        <button className='bg-white text-purple-900 font-semibold rounded-lg px-4 mx-2 h-12 mt-2 hover:bg-slate-300' onClick={handleGptSearchClick}>{showGptSearch ? (<IoHome />) : "Gpt Search"} </button>
         <img className='w-10 h-10 m-2' src={UserIcon} alt="UserIcon" />
         <button className=' text-white bg-transparent text-base font-medium -mt-4' onClick={handleSignOut}>Log-Out</button>
     </div>

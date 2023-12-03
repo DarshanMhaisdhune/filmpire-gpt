@@ -4,7 +4,7 @@ import { MdInfoOutline } from "react-icons/md";
 
 const VideoTitle = ({title, overview}) => {
   return (
-    <div className='pt-80 px-11 absolute text-white bg-gradient-to-r from-black w-screen aspect-video overflow-x-hidden'>
+    <div className='pt-72 px-11 absolute text-white bg-gradient-to-r from-black w-screen aspect-video overflow-x-hidden'>
         <h1 className='text-5xl font-bold'>{title}</h1>
         <p className='text-lg w-1/2 p-2 font-sans'>{overview}</p>
         <div className='flex'>
